@@ -251,7 +251,8 @@ public class xQuiz {
 	
 	/**
 	 * Updates database entry for give nickname adding one point
-	 * 
+	 * @param jdbcurl url to database
+	 * @param nick the nickname of the winner
 	 */
 	public static void correctAnswer(String jdbcurl, String nick){
 		System.out.println("minchia oh... troppo giusta!!!");
