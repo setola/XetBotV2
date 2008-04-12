@@ -1,0 +1,9 @@
+rm *.class &2> /dev/null 
+rm xetbotv2/*.class &2> /dev/null 
+rm xetbotv2/libs/*.class &2> /dev/null 
+rm xetbotv2/modules/*.class &2> /dev/null 
+
+echo ---------------------
+echo
+
+#javac xetbotv2/XetBotV2Main.java
