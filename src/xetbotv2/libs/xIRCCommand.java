@@ -55,9 +55,12 @@ public class xIRCCommand extends xCommand implements xIRCCommandTypeCode{
 
 		else if(this.getCommand().compareToIgnoreCase("/ctcp") == 0)
 			this.type = xIRCCommand.RESPONSE_TYPE_CTCP;
-		
+
 		else if(this.getCommand().compareToIgnoreCase("/delay") == 0)
-			this.type = xIRCCommand.RESPONSE_TYPE_DELAY;		
+			this.type = xIRCCommand.RESPONSE_TYPE_DELAY;	
+		
+		else if(this.getCommand().compareToIgnoreCase("/quiz_correct_answer") == 0)
+			this.type = xIRCCommand.RESPONSE_TYPE_QUIZ_CORRECT_ANSWER;		
 		
 		else this.type = xIRCCommand.RESPONSE_TYPE_RAW_COMMAND;
 	}

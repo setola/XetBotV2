@@ -23,6 +23,10 @@ public interface xIRCCommandTypeCode{
 	public static final int RESPONSE_TYPE_CTCP = 5;
 	/** a WAIT\SLEEP\DELAY command i.e. /delay 2 s*/
 	public static final int RESPONSE_TYPE_DELAY = 6;
+	/** called when someone give the correct answer to a quiz 
+	 * i.e. /quiz_correct_answer nick 2  where 2 is the time for answering
+	 */
+	public static final int RESPONSE_TYPE_QUIZ_CORRECT_ANSWER = 7;
 	
 	/** 
 		may be usefull a method that checks if 

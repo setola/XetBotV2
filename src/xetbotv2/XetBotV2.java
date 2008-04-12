@@ -106,6 +106,10 @@ public class XetBotV2 extends PircBot {
 						try { Thread.sleep(delay); }
 						catch (InterruptedException e) { e.printStackTrace(); }
 					}
+					else if(command.isType(xIRCCommandTypeCode.RESPONSE_TYPE_QUIZ_CORRECT_ANSWER)){
+						//System.out.println("il plugin "+i+" e' quiz risposta giusta");//debug
+						xQuiz.correctAnswer(config, sender);
+					}
 				}
 			}
 			//System.out.println("======================");//debug

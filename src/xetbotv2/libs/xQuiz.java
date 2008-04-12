@@ -250,6 +250,14 @@ public class xQuiz {
 	}
 	
 	/**
+	 * Updates database entry for give nickname adding one point
+	 * 
+	 */
+	public static void correctAnwser(String jdbcurl, String nick){
+		
+	}
+	
+	/**
 	 * Returns a string representing current question's parameters
 	 * 
 	 * @deprecated useless...
