@@ -68,9 +68,10 @@ public class XetBotQuizModule implements BotFunction {
 		}
 		
 		else{
-			if(quiz.isWaitingForAnswers() && quiz.checkAnswer(text))
+			if(quiz.isWaitingForAnswers() && quiz.checkAnswer(text)){
 				result.add(new xIRCCommand("/msg# "+Colors.RED+"$user"+Colors.NORMAL+" rulla!"));
-			result.add(new xIRCCommand("/quiz_correct_answer $user"));
+				result.add(new xIRCCommand("/quiz_correct_answer $user"));
+			}
 		}
 		
 		return result;

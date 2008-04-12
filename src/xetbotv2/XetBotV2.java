@@ -7,6 +7,7 @@ import xetbotv2.libs.xCommandList;
 import xetbotv2.libs.xIRCCommandTypeCode;
 import xetbotv2.libs.xConfig;
 import org.jibble.pircbot.*;
+import xetbotv2.libs.xQuiz;
 //import java.io.IOException;
 //import java.util.StringTokenizer;
 
@@ -108,7 +109,7 @@ public class XetBotV2 extends PircBot {
 					}
 					else if(command.isType(xIRCCommandTypeCode.RESPONSE_TYPE_QUIZ_CORRECT_ANSWER)){
 						//System.out.println("il plugin "+i+" e' quiz risposta giusta");//debug
-						xQuiz.correctAnswer(config, sender);
+						xQuiz.correctAnswer(config.get(xConfig.CONFIG_JDBCURL), sender);
 					}
 				}
 			}

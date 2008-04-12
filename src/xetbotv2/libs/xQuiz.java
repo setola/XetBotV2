@@ -253,8 +253,8 @@ public class xQuiz {
 	 * Updates database entry for give nickname adding one point
 	 * 
 	 */
-	public static void correctAnwser(String jdbcurl, String nick){
-		
+	public static void correctAnswer(String jdbcurl, String nick){
+		System.out.println("minchia oh... troppo giusta!!!");
 	}
 	
 	/**
