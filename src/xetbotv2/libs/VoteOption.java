@@ -1,7 +1,7 @@
 package xetbotv2.libs;
 
 /**
-  describes a tipical poll option
+  describes a typical poll option
 */
 public class VoteOption implements Comparable{
   private String option;
